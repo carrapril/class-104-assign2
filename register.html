@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April's Pet Salon Register</title>
+    <link rel="stylesheet" href="styles/pet.css">
+</head>
+<body>
+    <!--creat a form with the following inputs name, age, gender, breed, service, owner, contact-->
+    <header>
+        <h1>Register</h1>
+    </header>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <section>
+            <article>
+                <h2>Register New Pet</h2>
+               <div class="input-container">
+                   <div class="form-control">
+                       <input type="text" id="petName" placeholder="Enter pet name">
+                   </div>
+                   <div class="form-control">
+                       <input type="number" id="txtAge" placeholder="Enter the age">
+                   </div>
+                   <div class="form-control">
+                       <input type="text" id="txtGender" placeholder="Enter the gender">
+                   </div>
+                   <div class="form-control">
+                       <input type="text" id="txtBreed" placeholder="Enter the breed">
+                   </div>
+                   <div class="form-control">
+                      <input type="text" id="txtOwner" placeholder="Enter the owner name">
+                   </div>
+                   <div class="cus-select"></div>
+                       <select id="selService">
+                           <option>--Select Service--</option>
+                           <option value="nail cut">Nail Trim</option>
+                           <option value="wash">💈Wash</option>
+                           <option value="full service">Full Service</option>
+                       </select>
+                   </div>
+                   <div class="form-control">
+                      <input type="text" id="txtOwnerNumber" placeholder="Enter the owner number">
+                   </div>
+                   
+                   
+                   <button onclick="register();">Register</button>   
+               </div>
+
+               <!--display array into table-->
+               <div id="petList" class="pets">
+
+               </div>
+
+            </article>
+        </section> 
+           
+
+        <footer>
+            <p>The Fashionable Pet Salon</p>
+            <p>555-555-5555</p>
+            <p>Address: 123 Animal Ave.</p>
+            <p>San Diego, CA</p>
+        </footer>
+        
+        <script src="scripts/register.js"></script>
+    
+     
+</body>
+</html>

@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    color:rgb(97, 95, 95);
+}
+html{
+    height: 100%;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/*                                     header                         */
+header{
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+/*                                 NAV                        */
+
+.navbar ul{
+    list-style:none; 
+    background-color: white;
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    display: block;
+    width:100%;
+    color:#000;
+    letter-spacing: 2px;
+    padding: 25px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li a:hover{
+    background-color: aquamarine;
+}
+
+/*                                         article and section                  */
+article{
+    max-width: 700px;
+    margin:auto;
+}
+section{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.page-content{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+}
+.index-img{
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    height: auto;  
+    overflow: auto;
+}
+blockquote{
+    margin: auto;
+    text-align: center;
+}
+/*                                      button                      */
+button{
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: bisque;
+    color: grey;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding:15px;
+    margin-left: 280px;
+}
+
+
+/*                                      ABOUT US PAGE                           */
+
+
+
+.gallery{
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.cursor{
+    cursor: pointer;
+}
+.prev,
+.next{
+    cursor:pointer;
+    position:absolute;
+    top:40%;
+    width:auto;
+    padding:16px;
+    margin-top:-50px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next{
+    right:0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } 
+
+
+/*                                services page                */
+.column{
+  float:left;
+  width:25%;
+  padding:5px;  
+}
+.row::after{
+    content: "";
+    clear:both;
+    display: table;
+}
+.servdes{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/*                                        register               */
+body>table{
+    width: 80%;
+}
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+td,th{
+    border:1px solid black;
+    text-align: left;
+    padding:8px;
+}
+tr:nth-child(even),table.list thead>tr{
+    background-color: aliceblue;
+}
+input[type=text], input[type=number]{
+    width: 100%;
+    background-color: bisque;
+    padding: 12px 20px;
+    color:grey;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 8px ridge;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+#selService{
+    background-color: bisque;
+    color:grey;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+    border: 8px ridge;
+    font-size: 16px;
+}
+option{
+    font-size: 14px;
+    font-weight: 700;
+}
+.pets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    letter-spacing: 1px;
+    padding: 20px;
+    border: 1px ridge;
+}
+.pet-card{
+    border: 1px solid grey;
+}
+
+
+/*                              footer                 */
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: bisque;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding:5px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/*media queries*/
+@media (max-width:600px){
+    nav,article{
+        width: 100%;
+        height:auto;
+    }
+}
